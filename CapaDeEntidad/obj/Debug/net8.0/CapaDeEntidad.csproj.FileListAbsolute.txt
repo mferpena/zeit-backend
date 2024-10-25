@@ -1,0 +1,11 @@
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\bin\Debug\net8.0\CapaDeEntidad.deps.json
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\bin\Debug\net8.0\CapaDeEntidad.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\bin\Debug\net8.0\CapaDeEntidad.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.AssemblyInfoInputs.cache
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.AssemblyInfo.cs
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.csproj.CoreCompileInputs.cache
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\refint\CapaDeEntidad.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\CapaDeEntidad.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeEntidad\obj\Debug\net8.0\ref\CapaDeEntidad.dll

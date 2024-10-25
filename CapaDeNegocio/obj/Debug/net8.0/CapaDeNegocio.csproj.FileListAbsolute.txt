@@ -1,0 +1,17 @@
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeNegocio.deps.json
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeNegocio.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeNegocio.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeDatos.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeEntidad.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeDatos.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\bin\Debug\net8.0\CapaDeEntidad.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.csproj.AssemblyReference.cache
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.AssemblyInfoInputs.cache
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.AssemblyInfo.cs
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNe.701FBC6E.Up2Date
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\refint\CapaDeNegocio.dll
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\CapaDeNegocio.pdb
+C:\Users\mferp\Desktop\zeit-backend\CapaDeNegocio\obj\Debug\net8.0\ref\CapaDeNegocio.dll

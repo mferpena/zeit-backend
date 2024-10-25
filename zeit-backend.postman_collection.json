@@ -1,0 +1,890 @@
+{
+	"info": {
+		"_postman_id": "1b745a18-c54c-4811-abbe-83c956218ea7",
+		"name": "zeit-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31094567"
+	},
+	"item": [
+		{
+			"name": "Sign Up (Registrar Usuario)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"usuario 02\",\r\n    \"password\": \"usuario 02\",\r\n    \"email\": \"example@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5157/api/Auth/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Auth",
+						"sign-up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registo exitoso [EXITO]",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"usuario 02\",\r\n    \"password\": \"usuario 02\",\r\n    \"email\": \"example@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Auth/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Auth",
+								"sign-up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:18:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"message\": \"Usuario registrado correctamente\"\n}"
+				},
+				{
+					"name": "Mismo usuario registrado [ERROR]",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"usuario 02\",\r\n    \"password\": \"usuario 02\",\r\n    \"email\": \"example@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Auth/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Auth",
+								"sign-up"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:18:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Ocurrió un error inesperado\",\n    \"stack\": \"El usuario con el nombre de usuario 'usuario 02' ya existe.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign In (Iniciar Sesión)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"usuario 02\",\n    \"Password\": \"usuario 202\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5157/api/Auth/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Auth",
+						"sign-in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Inicio [EXITO]",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Username\": \"usuario 02\",\n    \"Password\": \"usuario 02\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Auth/sign-in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Auth",
+								"sign-in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:19:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Inicio de sesión exitoso\",\n    \"accessToken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7IklkIjo4LCJVc2VyTmFtZSI6InVzdWFyaW8gMDIiLCJQYXNzd29yZCI6IiQyYSQxMSRjOURDNVRxci5xM1VGOVB4QnR4N1JPVS5wQVlMaHlEbGNUOXY2L2RSMWJaSGhaOVRYa2U5bSIsIkVtYWlsIjoiZXhhbXBsZUBleGFtcGxlLmNvbSJ9LCJyb2xlcyI6WyJBRE1JTiJdLCJleHAiOjE3Mjk4NTE1ODB9.D9nQ5TkHp5u-RA5ueSnLLSstnRKQtzY4V0PUO0-mHLA\"\n}"
+				},
+				{
+					"name": "Contraseña incorrecta [ERROR]",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Username\": \"usuario 02\",\n    \"Password\": \"usuario 202\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Auth/sign-in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Auth",
+								"sign-in"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:19:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Ocurrió un error inesperado\",\n    \"stack\": \"La contraseña es incorrecta.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Todo By ID (Obtener una tarea por ID)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5157/api/Todo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Todo",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "No encontado [400]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"1"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:20:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Ocurrió un error inesperado\",\n    \"stack\": \"No se encontró un Todo con el ID 1.\"\n}"
+				},
+				{
+					"name": "Encontrado [EXITO]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:24:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Tarea obtenida correctamente\",\n    \"todo\": {\n        \"id\": 4,\n        \"title\": \"Nueva Tarea\",\n        \"description\": \"Descripción de la tarea\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Todos (Obtener todas las tareas con filtro por título)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5157/api/Todo?title=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Todo"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listado [EXITO]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo?title=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:20:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Tareas obtenidas correctamente\",\n    \"pageTodo\": {\n        \"todos\": [\n            {\n                \"id\": 3,\n                \"title\": \"Nueva Tarea\",\n                \"description\": \"Descripción de la tarea\"\n            },\n            {\n                \"id\": 4,\n                \"title\": \"Nueva Tarea\",\n                \"description\": \"Descripción de la tarea\"\n            },\n            {\n                \"id\": 5,\n                \"title\": \"Nueva Tarea\",\n                \"description\": \"Descripción de la tarea\"\n            },\n            {\n                \"id\": 6,\n                \"title\": \"Nueva Tarea\",\n                \"description\": \"Descripción de la tarea\"\n            }\n        ],\n        \"pagination\": {\n            \"currentPage\": 1,\n            \"totalPages\": 1,\n            \"pageSize\": 10,\n            \"total\": 4\n        }\n    }\n}"
+				},
+				{
+					"name": "Sin coincidencias [EXITO]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo?title=123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:21:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Tareas obtenidas correctamente\",\n    \"pageTodo\": {\n        \"todos\": [],\n        \"pagination\": {\n            \"currentPage\": 1,\n            \"totalPages\": 0,\n            \"pageSize\": 10,\n            \"total\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Todo (Crear una tarea)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Title\": \"Nueva Tarea\",\n  \"Description\": \"Descripción de la tarea\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5157/api/Todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Todo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Tarea creada [EXITO]",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Title\": \"Nueva Tarea\",\n  \"Description\": \"Descripción de la tarea\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Todo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:21:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 201,\n    \"message\": \"Tarea creada correctamente\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Todo (Actualizar una tarea por ID)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Title\": \"Título actualizado\",\n  \"Description\": \"Descripción actualizada\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5157/api/Todo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Todo",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "No encontrado [400]",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"Título actualizado\",\n    \"Description\": \"Descripción actualizada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"1"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:22:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Ocurrió un error inesperado\",\n    \"stack\": \"Todo no encontrado\"\n}"
+				},
+				{
+					"name": "Tarea actualizada [EXITO]",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Title\": \"Título actualizado\",\n  \"Description\": \"Descripción actualizada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:23:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Tarea actualizada correctamente\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Todo (Eliminar una tarea por ID)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5157/api/Todo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5157",
+					"path": [
+						"api",
+						"Todo",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "No encontrado [400]",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"1"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:22:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 500,\n    \"message\": \"Ocurrió un error inesperado\",\n    \"stack\": \"Todo no encontrado\"\n}"
+				},
+				{
+					"name": "Eliminacion [EXITO]",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5157/api/Todo/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5157",
+							"path": [
+								"api",
+								"Todo",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 25 Oct 2024 05:23:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Tarea eliminada correctamente\"\n}"
+				}
+			]
+		}
+	]
+}
